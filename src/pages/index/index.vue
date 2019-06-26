@@ -1,12 +1,12 @@
 <template>
-  <div @click="clickHandle">
-
-    
+  <div>
+    <van-button type="primary">按钮</van-button>
+   123123
   </div>
 </template>
 
 <script>
-// import card from '@/components/card'
+
 
 export default {
   data () {
@@ -15,9 +15,7 @@ export default {
     }
   },
 
-  components: {
-    card
-  },
+
 
   methods: {
    
