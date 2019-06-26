@@ -1,37 +1,23 @@
-# my-fuwu
+### 前端
 
-> A Mpvue project
+> UI框架
+###### vant-weapp
 
-## Build Setup
 
-``` bash
-# 初始化项目
-vue init mpvue/mpvue-quickstart myproject
-cd myproject
+> 首页
 
-# 安装依赖
-yarn
+###### 搜索框、定位模块(定位:腾讯地图实现,城市定位 && 精准定位)
+###### 轮播模块(三方服务商提供)
+###### 服务分类模块(UI框架)
+###### 懒加载三方商户服务(三方服务商提供)
 
-# 开发时构建
-npm dev
+> 活动(暂无想法,可更换)
 
-# 打包构建
-npm build
+> 订单
+###### 未完成、已完成分类(未完成可以去跳转支付)
+###### 支付页面(调用微信支付接口)
 
-# 指定平台的开发时构建(微信、百度、头条、支付宝)
-npm dev:wx
-npm dev:swan
-npm dev:tt
-npm dev:my
 
-# 指定平台的打包构建
-npm build:wx
-npm build:swan
-npm build:tt
-npm build:my
-
-# 生成 bundle 分析报告
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> 我的
+###### 我的订单、我的信息
+###### 注册/登陆(账号+短信验证码登陆 && 账号+密码登陆 && 账号+密码或切换短信验证码登陆)
