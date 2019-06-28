@@ -3,6 +3,28 @@
     <div class="header">
       <p><van-icon name="location-o"/>{{position.district}}<span @click="toPosition">位置有误？点击更换</span></p>
     </div>
+
+    <div class="main">
+      <div class="title_wrap" >
+        <div v-for="title in titles" v-bind:key="title.id">
+          <img :src="title.image" alt="">
+          <p>{{title.name}}</p>
+        </div>
+      </div>   
+
+      <div class="extend_wrap">
+        <div v-for="extend in extensions" v-bind:key="extend.id">
+          <h5>{{extend.name}}</h5>
+          <p>{{extend.info}}</p>
+          <img :src="extend.image" alt="">
+        </div>
+      </div>
+
+      
+      
+
+    </div>
+
   </div>
 </template>
 
@@ -10,7 +32,85 @@
 export default {
   data () {
     return {
-      position:{}
+      position:{},
+      titles:[
+        {
+          id:1,
+          name:"特惠洗车",
+          image:"/static/images/1.png"
+        },
+        {
+          id:2,
+          name:"违章查询",
+          image:"/static/images/2.png"
+        },
+        {
+          id:3,
+          name:"加油充值",
+          image:"/static/images/3.png"
+        },
+        {
+          id:4,
+          name:"特价车险",
+          image:"/static/images/4.png"
+        },
+        {
+          id:5,
+          name:"高价卖车",
+          image:"/static/images/5.png"
+        },
+        {
+          id:6,
+          name:"4S店保养",
+          image:"/static/images/6.png"
+        },
+        {
+          id:7,
+          name:"年检代办",
+          image:"/static/images/7.png"
+        },
+        {
+          id:8,
+          name:"极速救援",
+          image:"/static/images/8.png"
+        },
+        {
+          id:9,
+          name:"扫码移车",
+          image:"/static/images/9.png"
+        },
+        {
+          id:10,
+          name:"全部服务",
+          image:"/static/images/10.png"
+        }
+      ],
+      extensions:[
+        {
+          id:1,
+          name:"0元修车",
+          info:"50元加油卷免费领",
+          image:"/static/images/11.gif"
+        },
+        {
+          id:2,
+          name:"洗车不花钱",
+          info:"众多好礼等你拿!",
+          image:"/static/images/12.gif"
+        },
+        {
+          id:3,
+          name:"全国驾照",
+          info:"限时免费领",
+          image:"/static/images/13.gif"
+        },
+        {
+          id:4,
+          name:"骑士卡",
+          info:"全球购物4折",
+          image:"/static/images/14.gif"
+        }
+      ]
     }
   },
   methods: {
@@ -43,6 +143,7 @@ export default {
   .index{
     padding: 0 .3rem;
   }
+  /* 头部区 */
   .header{
   }
   .header p{
@@ -51,5 +152,40 @@ export default {
   .header span{
     padding-left:.05rem; 
     font-size:.2rem;
+  }
+  /* 主体标题区 */
+  .main{
+    padding-top:.4rem; 
+  }
+  .main .title_wrap{   
+    font-size:.24rem;
+    text-align: center;
+    color:#858585;
+    line-height: .4rem;   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+  }
+  .main .title_wrap div{
+     padding: .2rem .2rem 0 .2rem;
+  }
+  .main .title_wrap img{
+    height:.8rem;
+    width: .8rem;
+  }
+  /* 主体推广区 */
+  .main .extend_wrap{
+    background: #f7f7f7;
+  }
+  .main .extend_wrap h5{
+    padding-left:.2rem; 
+  }
+   .main .extend_wrap p{
+    padding-left:.2rem; 
+    color:#d2d2d2;
+    size:.16rem;
+  }
+  .main .extend_wrap:nth-child(1){
+
   }
 </style>

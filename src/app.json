@@ -26,7 +26,7 @@
         "selectedIconPath": "static/tabs/home-active.png"
       },
       {
-        "text": "活动",
+        "text": "搜索",
         "pagePath": "pages/active/main",
         "iconPath": "static/tabs/home.png",
         "selectedIconPath": "static/tabs/home-active.png"
@@ -34,8 +34,8 @@
       {
         "text": "订单",
         "pagePath": "pages/order/main",
-        "iconPath": "static/tabs/home.png",
-        "selectedIconPath": "static/tabs/home-active.png"
+        "iconPath": "static/tabs/orders.png",
+        "selectedIconPath": "static/tabs/orders-active.png"
       },
       {
         "text": "我的",
@@ -55,7 +55,7 @@
         "selectedIconPath": "static/tabs/home-active.png"
         },
         {
-          "text": "活动",
+          "text": "搜索",
           "pagePath": "pages/active/main",
           "iconPath": "static/tabs/home.png",
           "selectedIconPath": "static/tabs/home-active.png"
@@ -63,8 +63,8 @@
         {
           "text": "订单",
           "pagePath": "pages/order/main",
-          "iconPath": "static/tabs/home.png",
-          "selectedIconPath": "static/tabs/home-active.png"
+          "iconPath": "static/tabs/orders.png",
+          "selectedIconPath": "static/tabs/orders-active.png"
         },
         {
           "text": "我的",
