@@ -139,53 +139,57 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped  lang=scss>
+
   .index{
     padding: 0 .3rem;
   }
   /* 头部区 */
   .header{
+    p{
+      font-size:.3rem;
+    }
+    span{
+      padding-left:.05rem; 
+      font-size:.2rem;
+    }
   }
-  .header p{
-    font-size:.3rem;
-  }
-  .header span{
-    padding-left:.05rem; 
-    font-size:.2rem;
-  }
-  /* 主体标题区 */
+  
+  /* 主体曲 */
   .main{
-    padding-top:.4rem; 
-  }
-  .main .title_wrap{   
-    font-size:.24rem;
-    text-align: center;
-    color:#858585;
-    line-height: .4rem;   
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-  }
-  .main .title_wrap div{
-     padding: .2rem .2rem 0 .2rem;
-  }
-  .main .title_wrap img{
-    height:.8rem;
-    width: .8rem;
-  }
-  /* 主体推广区 */
-  .main .extend_wrap{
-    background: #f7f7f7;
-  }
-  .main .extend_wrap h5{
-    padding-left:.2rem; 
-  }
-   .main .extend_wrap p{
-    padding-left:.2rem; 
-    color:#d2d2d2;
-    size:.16rem;
-  }
-  .main .extend_wrap:nth-child(1){
+  /* 主体标题区 */
 
+    padding-top:.4rem; 
+      .title_wrap{   
+        font-size:.24rem;
+        text-align: center;
+        color:#858585;
+        line-height: .4rem;   
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        div{
+         padding: .2rem .2rem 0 .2rem;
+        }
+        img{
+        height:.8rem;
+        width: .8rem;
+        }
+      }
+       /* 主体推广区 */
+      .extend_wrap{
+        background: #f7f7f7;
+        h5{
+          padding-left:.2rem; 
+        }
+        p{
+          padding-left:.2rem; 
+          color:#999;
+          size:.16rem;
+        }
+      }
   }
+ 
+
+ 
 </style>
