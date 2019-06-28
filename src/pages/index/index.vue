@@ -146,6 +146,7 @@ export default {
   }
   /* 头部区 */
   .header{
+    padding-left:.2rem; 
     p{
       font-size:.3rem;
     }
@@ -158,7 +159,6 @@ export default {
   /* 主体曲 */
   .main{
   /* 主体标题区 */
-
     padding-top:.4rem; 
       .title_wrap{   
         font-size:.24rem;
@@ -178,14 +178,72 @@ export default {
       }
        /* 主体推广区 */
       .extend_wrap{
-        background: #f7f7f7;
+        margin-top:.3rem; 
+        position: relative;
         h5{
-          padding-left:.2rem; 
+          padding: .3rem 0 0 .2rem;
+          font-size: .3rem;
+         
         }
         p{
+          line-height: .5rem;
           padding-left:.2rem; 
           color:#999;
-          size:.16rem;
+          font-size:.25rem;
+        }
+        div{
+          background: #f7f7f7;
+          &:nth-child(1){
+            position: absolute;
+            top: 0;
+            left:0;
+            height: 4.3rem;
+            width: 2.5rem;
+            img{
+              padding:.5rem; 
+              width:1.5rem;
+              height:1.5rem;
+            }
+          }
+          &:nth-child(2){
+            position: absolute;
+            top: 0;
+            right:0;
+            height: 1.7rem;
+            width: 4.2rem;
+            img{
+              position: absolute;
+              right: 0.2rem;
+              top: 0.35rem;
+              width:1rem;
+              height:1rem;
+            }
+          }
+          &:nth-child(3){
+            position: absolute;
+            top: 1.8rem;
+            left:2.65rem;
+            height: 2.5rem;
+            width: 2rem;
+            border-left:#fff .1rem solid; 
+            img{
+              padding:.2rem .5rem 0 .5rem;             
+              width:1rem;
+              height:1rem;
+            }
+          }
+          &:nth-child(4){
+            position: absolute;
+            top: 1.8rem;
+            right:0;
+            height: 2.5rem;
+            width: 2rem;
+            img{
+              padding:.2rem .5rem 0 .5rem;             
+              width:1rem;
+              height:1rem;
+            }
+          }
         }
       }
   }
